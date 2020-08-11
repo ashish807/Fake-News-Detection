@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 dataframe =pd.read_csv("news.csv")
 
 print(dataframe.shape)
-dataframe.head(5)
+print(dataframe.head(5))
 labels =dataframe.label
 print(labels.shape)
 X_train,X_test,y_train,y_test =train_test_split(dataframe["text"],labels,test_size=0.2,random_state=7)
